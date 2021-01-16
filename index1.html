@@ -1,34 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESCAPE ROOMS</title>
 </head>
 <style>
-    body { background-image: url("אסקייפ.jpg");
-    background-size: cover;}
+    body {
+        background-image: url("images/אסקייפ.jpg");
+        background-size: cover;
 
-    img { 
-    width: 200px;
-height: 200px;
-opacity: 0.7;}
+        width: 100vw;
+        display: grid;
+        grid-template-areas: "header header header header header"
+            "sidebar section section section section"
+            "sidebar section section section section"
+            "sidebar nav nav nav nav"
+            "footer footer footer footer footer";
+        gap: 5px;
+    }
 
-H1 { text-align: center;
-background-color: aliceblue;}
+    img {
+        width: 200px;
+        height: 200px;
+        opacity: 0.7;
+    }
 
-img:hover { 
-    width: 500px;
-    height: 500px;
-    opacity: 1.0;
- }
- .section { display: grid;
-flex-wrap: wrap;}
+
+    header {
+        grid-area: header;
+        height: 6vh;
+        margin: 20px;
+        position: sticky;
+        top: 10px;
+        font-family: 'Redressed', cursive;
+        font-size: xx-large;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.589);
+        text-shadow: 1px 1px 2px black;
+    }
+
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+
+
+    .footer {margin: 20px;
+        grid-area: footer;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+ 
+
+    .section {
+        display: grid;
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+
+    nav {
+        grid-area: nav;}
+    
+
+    .sidebar {
+        font-family: 'Redressed', cursive;
+        font-size: large;
+        box-sizing: border-box;
+        margin: 5px;
+        width: 11vw;
+        height: 80vh;
+        border: 4px solid black;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.589);
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+
+    hr {
+        color: #000;
+    }
+
+    .sidebar-content {
+        display: none;
+        color: white;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.589);
+        padding: 12px 16px;
+    }
+
+    .sidebar:hover .sidebar-content {
+        display: block;
+        width: 8.5vw;
+    }
+
+    ul {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        font-family: 'Redressed', cursive;
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+        color: white;
+        list-style: none;
+        position: relative;
+        border: 2px solid black;
+        background-color: black;
+        transition: all 8s ease-in-out;
+        top: 50px;
+        animation: gallery 8s backwards infinite;
+    }
+
+
+    li:nth-child(1) {
+        transform: rotate(-5deg);
+    }
+
+    li:nth-child(2) {
+        transform: rotate(5deg);
+    }
+
+    li:nth-child(3) {
+        transform: rotate(-5deg);
+    }
+
+    li:nth-child(4) {
+        transform: rotate(5deg);
+    }
+
+    @keyframes gallery {
+        from {
+            top: 150px;
+            left: 60%;
+        }
+
+        to {
+            left: 20%;
+            top: 0%;
+            filter: blur(60%);
+        }
+    }
+
+    p {
+        font-size: x-large;
+        font-family: 'Redressed', cursive;
+        font-style: italic;
+    }
+
+    .VIDEO {
+        display: inline-block;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 25px;
+    }
+
+    .VID {
+        display: inline-block;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 25px;
+    }
+
+    button {
+        font-size: xx-large;
+        background-color: rgba(0, 0, 0, 0.589);
+        color: white;
+        border-radius: 2px;
+    }
+    button:hover {background-color: black;
+    cursor: pointer;}
+
+    #p {text-align: center;
+        font-size: x-large;
+        color: white;
+        width: 88vw;
+        background-color: rgba(0, 0, 0, 0.589);
+
+    }
+    span { display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Redressed', cursive;
+    font-size: x-large;
+    color: black;
+    text-shadow: 1px 1px 2px white;}
+    span[target] {background-color: rgba(0, 0, 0, 0.589);}
 
 </style>
+
 <body>
-    <h1> EVENTS </h1>
+    <header class="header">EVENTS</header>
+
+
+    <sidebr class="sidebar">
+        <span>EVENTS FOR </span>
+        <div class="sidebar-content">
+            <p> Birthday</p>
+            <hr>
+            <p>Children</p>
+            <hr>
+            <p>Families</p>
+            <hr>
+            <p>Groups</p>
+            <hr>
+            <p>Couples</p>
+            <hr>
+            <p>Team days</p>
+            <hr>
+        </div>
+    </sidebr>
+    <section class="section">
+        <ul>
+            <li> <img src="images/אירוע 1.jfif">
+                <p>Families</p>
+            </li>
+            <li> <img src="images/אירוע 2.jfif">
+                <p>Birthday</p>
+            </li>
+            <li> <img src="images/אירוע 3.jfif">
+                <p>Groups</p>
+            </li>
+            <li> <img src="images/אירוע 4.jfif">
+                <p>Children</p>
+            </li>
+
+        </ul>
+    </section>
+    <nav class="nav">
+        <p id="p"><strong>When planning an event, quality must not be given up!<br>
+            Choose the largest, oldest and best-known escape room chain in Israel and let the professionals help you
+            make your event truly successful.<br>
+             Let's go on an adventure together!</strong></p>
+        <iframe class="VIDEO" width="560" height="315" src="https://www.youtube.com/embed/aW3-E3My-kc" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe class="VID" width="560" height="315" src="https://www.youtube.com/embed/zwgaTYOx0RI" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </nav>
+    <footer class="footer"> <button>Get an offer</button>
+        <br>
+        <br>
+        </div>
+        </sidebr>
+        </sidebr>
 
 
 </body>
+
 </html>

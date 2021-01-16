@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCAPE ROOMS</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+        color: black;
+        text-align: center;
+        font-family: 'Redressed', cursive;
+        display: grid;
+        grid-template-areas: "header header header header header "
+            "sidebar  main main section section"
+            "sidebar  main main section section"
+            "article article article article article"
+            "footer footer footer footer footer";
+        gap: 5px
+    }
+
+    header {
+        text-align: center;
+        font-size: xx-large;
+        grid-area: header;
+    }
+
+    article {margin: 20px;
+        grid-area: article;
+        text-align: justify;
+        overflow: scroll;
+        width: 1500px;
+        height:80px ;
+    }
+
+    main {
+        grid-area: main;
+        border: 1px solid black;
+        /* background-image: url("images/25.jfif"); */
+        background-size: cover;
+        height: 50vh;
+        font-size: x-large;
+        border-radius: 20px;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        border: 1px solid black;
+        /* background-image: url("images/1+1.jfif"); */
+        background-size: cover;
+        font-size: x-large;
+        border-radius: 20px;
+    }
+
+    section {
+        grid-area: section;
+        border: 1px solid black;
+        /* background-image: url("images/50.jfif"); */
+        background-size: cover;
+        font-size: xx-large;
+        border-radius: 20px;
+    }
+
+    footer {
+        margin: 20px;
+        color: black;
+        text-align: center;
+        font-size: xx-large;
+        grid-area: footer;
+    }
+
+    .d {
+        font-size: xx-large;
+    }
+</style>
+
+<body>
+    <header class="header">ESCAPE CLUB<br><img src="images/גולגולת.jpg" width="200px" height="180px"><br>
+        Customer club and promotions for Escape Room members<br>
+        Want to enjoy a discount already in the upcoming game?<br>
+        Fill in details and we will contact you
+    </header>
+
+
+    <main class="main">
+        From the second game:
+        <p class="1">
+            25%
+        </p>
+    </main>
+
+    <sidebar class="sidebar">First game only:<p class="d">
+            1+1
+        </p>
+    </sidebar>
+    <section class="section">Birthday month:
+        <p class="1">
+            50%
+        </p>
+    </section>
+    <article class="article">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt natus blanditiis illum officiis
+        ullam mollitia architecto modi voluptates porro eligendi nulla minus, repellendus molestias debitis rerum
+        accusamus tempora maxime sunt fugit, nobis quis qui! Repudiandae quae mollitia, quo sapiente, ullam nisi odit
+        nemo magnam soluta nihil, enim dicta commodi. ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+        dolorum similique. Similique, libero nesciunt et ipsa quibusdam obcaecati illo rerum temporibus provident aut
+        nemo distinctio reiciendis quisquam officiis eligendi, saepe itaque architecto mollitia perspiciatis vel facilis
+        praesentium. Repudiandae placeat facilis aliquam mollitia dignissimos reiciendis iusto, odio porro, fuga dolorum
+        ipsam? ipsum dolor sit amet consectetur adipisicing elit. Velit minima et nemo voluptate, veniam quisquam,</article>
+
+       
+            <label>
+                Name:
+                <input type="text" name="name" />
+            </label>
+            <label>
+                Email :
+                <input type="text" name="email" />
+            </label>
+            <label>
+                Age:
+                <input type="number" name="age" />
+            </label>
+            <button type="submit">send</button>
+            <button type="reset">reset</button>
+        </form>
+    </footer>
+
+
+</body>
+
+</html>

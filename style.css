@@ -21,7 +21,7 @@ header { grid-area: header ;
     text-align: center;
 font-size: xx-large;
 padding: 40px;
-height:35vh ;
+height:38vh ;
 width: 95vw;
 opacity: 0.8;
 }
@@ -96,8 +96,8 @@ font-size: large;
      border: 2px solid black;
 border-radius: 6px;
 padding: 5px;
-background-color: rgba(255, 255, 255, 0.664);}
-
+background-color: rgba(255, 255, 255, 0.664);
+}
 #ok{ border: 2px solid black;
     border-radius: 6px;
     padding: 1px;

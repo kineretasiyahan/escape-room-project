@@ -8,14 +8,16 @@
 </head>
 <style>
     body {
-        background-color: gray;
-        color: black;
+        background-image: url("images/club.jfif");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
         text-align: center;
         font-family: 'Redressed', cursive;
         display: grid;
         grid-template-areas: "header header header header header "
             "sidebar  main main section section"
-            "sidebar  main main section section"
+            "article article article article article"
             "article article article article article"
             "footer footer footer footer footer";
         gap: 5px
@@ -31,25 +33,23 @@
         grid-area: article;
         text-align: justify;
         overflow: scroll;
-        width: 1500px;
         height:80px ;
+        color: black;
+        background-color: white;
     }
 
     main {
         grid-area: main;
         border: 1px solid black;
-        /* background-image: url("images/25.jfif"); */
-        background-size: cover;
-        height: 50vh;
         font-size: x-large;
+        background-color: rgba(128, 128, 128, 0.692);
         border-radius: 20px;
     }
 
     .sidebar {
         grid-area: sidebar;
         border: 1px solid black;
-        /* background-image: url("images/1+1.jfif"); */
-        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.692);
         font-size: x-large;
         border-radius: 20px;
     }
@@ -57,7 +57,7 @@
     section {
         grid-area: section;
         border: 1px solid black;
-        /* background-image: url("images/50.jfif"); */
+        background-color:rgba(0, 128, 128, 0.692);
         background-size: cover;
         font-size: xx-large;
         border-radius: 20px;
@@ -67,12 +67,14 @@
         margin: 20px;
         color: black;
         text-align: center;
-        font-size: xx-large;
         grid-area: footer;
+        border-radius: 10px solid black;
+        color: black;
+        background-color: white;
     }
 
     .d {
-        font-size: xx-large;
+        font-size: 400%;
     }
 </style>
 
@@ -86,7 +88,7 @@
 
     <main class="main">
         From the second game:
-        <p class="1">
+        <p class="d">
             25%
         </p>
     </main>
@@ -96,7 +98,7 @@
         </p>
     </sidebar>
     <section class="section">Birthday month:
-        <p class="1">
+        <p class="d">
             50%
         </p>
     </section>
@@ -110,7 +112,7 @@
         praesentium. Repudiandae placeat facilis aliquam mollitia dignissimos reiciendis iusto, odio porro, fuga dolorum
         ipsam? ipsum dolor sit amet consectetur adipisicing elit. Velit minima et nemo voluptate, veniam quisquam,</article>
 
-       
+       <footer>
             <label>
                 Name:
                 <input type="text" name="name" />

@@ -1,0 +1,78 @@
+body {
+    background-image: url("images/gol.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    font-family: 'Redressed', cursive;
+    display: grid;
+    grid-template-areas: "header header header header header "
+        "sidebar  main main section section"
+        "article article article article article"
+        "nav nav nav nav nav"
+        "footer footer footer footer footer";
+    gap: 5px
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+    grid-area: header;
+}
+
+article {
+    margin: 20px;
+    grid-area: article;
+    text-align: justify;
+    overflow: scroll;
+    height: 90px;
+    color: white;
+    background-color: black;
+}
+
+main {
+    grid-area: main;
+    border: 1px solid black;
+    font-size: x-large;
+    background-color: rgba(128, 128, 128, 0.692);
+    border-radius: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.692);
+    font-size: x-large;
+    border-radius: 20px;
+}
+
+section {
+    grid-area: section;
+    border: 1px solid black;
+    background-color: rgba(0, 128, 128, 0.692);
+    background-size: cover;
+    font-size: x-large;
+    border-radius: 20px;
+}
+
+footer {
+    margin: 20px;
+    color: black;
+    font-size: large;
+    text-align: center;
+    grid-area: footer;
+    border-radius: 10px solid black;
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: -18px;
+    width: 100%;
+    
+}
+nav {grid-area: nav;
+    display: flex;
+    justify-content: center;}
+
+.d {
+    font-size: 400%;
+}

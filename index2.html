@@ -5,81 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESCAPE ROOMS</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
-<style>
-    body {
-        background-image: url("images/club.jfif");
-        background-size: cover;
-        background-attachment: fixed;
-        color: white;
-        text-align: center;
-        font-family: 'Redressed', cursive;
-        display: grid;
-        grid-template-areas: "header header header header header "
-            "sidebar  main main section section"
-            "article article article article article"
-            "article article article article article"
-            "footer footer footer footer footer";
-        gap: 5px
-    }
-
-    header {
-        text-align: center;
-        font-size: xx-large;
-        grid-area: header;
-    }
-
-    article {margin: 20px;
-        grid-area: article;
-        text-align: justify;
-        overflow: scroll;
-        height:80px ;
-        color: black;
-        background-color: white;
-    }
-
-    main {
-        grid-area: main;
-        border: 1px solid black;
-        font-size: x-large;
-        background-color: rgba(128, 128, 128, 0.692);
-        border-radius: 20px;
-    }
-
-    .sidebar {
-        grid-area: sidebar;
-        border: 1px solid black;
-        background-color: rgba(0, 0, 0, 0.692);
-        font-size: x-large;
-        border-radius: 20px;
-    }
-
-    section {
-        grid-area: section;
-        border: 1px solid black;
-        background-color:rgba(0, 128, 128, 0.692);
-        background-size: cover;
-        font-size: xx-large;
-        border-radius: 20px;
-    }
-
-    footer {
-        margin: 20px;
-        color: black;
-        text-align: center;
-        grid-area: footer;
-        border-radius: 10px solid black;
-        color: black;
-        background-color: white;
-    }
-
-    .d {
-        font-size: 400%;
-    }
-</style>
 
 <body>
-    <header class="header">ESCAPE CLUB<br><img src="images/גולגולת.jpg" width="200px" height="180px"><br>
+    <header class="header">ESCAPE CLUB<br>
         Customer club and promotions for Escape Room members<br>
         Want to enjoy a discount already in the upcoming game?<br>
         Fill in details and we will contact you
@@ -90,43 +20,54 @@
         From the second game:
         <p class="d">
             25%
-        </p>
+        </p><br>Discount
     </main>
 
     <sidebar class="sidebar">First game only:<p class="d">
             1+1
-        </p>
+        </p><br> For free
     </sidebar>
     <section class="section">Birthday month:
         <p class="d">
             50%
-        </p>
+        </p> <br> Discount
     </section>
     <article class="article">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt natus blanditiis illum officiis
-        ullam mollitia architecto modi voluptates porro eligendi nulla minus, repellendus molestias debitis rerum
-        accusamus tempora maxime sunt fugit, nobis quis qui! Repudiandae quae mollitia, quo sapiente, ullam nisi odit
-        nemo magnam soluta nihil, enim dicta commodi. ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-        dolorum similique. Similique, libero nesciunt et ipsa quibusdam obcaecati illo rerum temporibus provident aut
-        nemo distinctio reiciendis quisquam officiis eligendi, saepe itaque architecto mollitia perspiciatis vel facilis
-        praesentium. Repudiandae placeat facilis aliquam mollitia dignissimos reiciendis iusto, odio porro, fuga dolorum
-        ipsam? ipsum dolor sit amet consectetur adipisicing elit. Velit minima et nemo voluptate, veniam quisquam,</article>
+        In order to identify the club member, it is necessary in various cases during the activity on the site to
+        provide basic personal details. The user identification range will provide basic personal information including:
+        first and last name, ID number, telephone number, e-mail and the last 6 digits of the credit card number. In
+        order to ensure that the user activity on the sub-operation site is faultless, care must be taken to provide the
+        correct details, otherwise the company cannot guarantee the proper operation of the entire services on the site.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi sint facere itaque necessitatibus, eos, voluptate
+        ducimus, soluta ad natus molestias numquam ipsum tenetur iusto maxime. Asperiores consequatur libero voluptas
+        modi.
+    </article>
 
-       <footer>
-            <label>
-                Name:
-                <input type="text" name="name" />
-            </label>
-            <label>
-                Email :
-                <input type="text" name="email" />
-            </label>
-            <label>
-                Age:
-                <input type="number" name="age" />
-            </label>
-            <button type="submit">send</button>
-            <button type="reset">reset</button>
+    <nav class="nav">
+        <audio id="myAudio" controls autoplay>
+            <source src="images/מנגינה מפחידה.mp3" type="audio/mp3">
+        </audio>
+    </nav>
+
+    <footer>
+        <label>
+            Name:
+            <input type="text" name="name" />
+        </label>
+        <label>
+            Email :
+            <input type="text" name="email" />
+        </label>
+        <label>
+            Age:
+            <input type="number" name="age" />
+        </label>
+        <label>
+            Phone:
+            <input type="tel">
+        </label>
+        <button type="submit">send</button>
+        <button type="reset">reset</button>
         </form>
     </footer>
 

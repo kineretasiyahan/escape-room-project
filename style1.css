@@ -1,27 +1,17 @@
 body {
     background-image: url("images/אסקייפ.jpg");
     background-size: cover;
-
-    width: 100vw;
     display: grid;
     grid-template-areas: "header header header header header"
         "sidebar section section section section"
         "sidebar section section section section"
         "sidebar nav nav nav nav"
         "footer footer footer footer footer";
-    gap: 5px;
-}
-
-img {
-    width: 200px;
-    height: 200px;
-    opacity: 0.7;
-}
+    gap: 5px;}
 
 
 header {
     grid-area: header;
-    height: 6vh;
     margin: 20px;
     position: sticky;
     top: 10px;
@@ -29,28 +19,10 @@ header {
     font-size: xx-large;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.589);
-    text-shadow: 1px 1px 2px black;
-}
+    background-color: rgba(0, 0, 0, 0.589);}
 
 
-.sidebar {
-    grid-area: sidebar;
-}
-
-section {
-    grid-area: section;
-}
-
-.footer {margin: 20px;
-    grid-area: footer;
-    text-align: center;
-    margin-bottom: 5px;
-    
-}
-
-.section {
-    display: grid;
+.section { grid-area: section;
     flex-wrap: wrap;
     height: 50vh;
 }
@@ -59,7 +31,7 @@ nav {
     grid-area: nav;}
 
 
-.sidebar {
+.sidebar {grid-area: sidebar;
     font-family: 'Redressed', cursive;
     font-size: large;
     box-sizing: border-box;
@@ -92,7 +64,6 @@ ul {
     position: absolute;
     padding: 0;
     margin: 0;
-
 }
 
 li {
@@ -129,7 +100,6 @@ li:nth-child(4) {
 
 @keyframes gallery {
     from {
-        top: 150px;
         left: 60%;
     }
 
@@ -138,9 +108,17 @@ li:nth-child(4) {
         top: 0%;
     }
 }
+
+img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+} 
+
 img:hover {height: 250px;
 width: 250px;
 filter: blur(60%);}
+
 p {
     font-size: x-large;
     font-family: 'Redressed', cursive;
@@ -149,7 +127,6 @@ p {
 
 .VIDEO ,
 .VID {
-    justify-content: flex-end;
     padding: 25px  ;
 }
 
@@ -164,18 +141,64 @@ button {
 button:hover {background-color: black;
 cursor: pointer;}
 
-#p {text-align: center;
+#p {margin: 30px;
+    text-align: center;
     font-size: x-large;
     color: white;
-    width: 83.5vw;
     background-color: rgba(0, 0, 0, 0.589);
 
 }
-span { display: flex;
-    justify-content: center;
-    text-align: center;
+span { 
     font-family: 'Redressed', cursive;
 font-size: x-large;
 color: black;
 text-shadow: 1px 1px 2px white;}
-span[target] {background-color: rgba(0, 0, 0, 0.589);}
+
+
+.footer {margin: 20px;
+    grid-area: footer;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+@media (max-width:360px)
+/* For mobile phones */ 
+{ body { 
+    display: grid;
+ grid-template-areas:
+"header header"
+ "sidebar sidebar"
+ "section section"
+ "nav nav "
+ "footer footer";
+ margin: 0px;
+ padding: 0px;
+}
+ 
+ .section {
+     display: inline-block;}
+     img { width: 20px;
+    height: 20px;}
+ 
+header{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: header;
+    width: 325px;
+    padding: 0px;
+}
+.sidebar{
+    width: 325px;
+height: 80vh;}
+    li{text-align: center;}
+    hr {display: none;}
+    img {width: 128px;
+    height: 90px;}
+
+    #p{width: 230px;
+    margin: 90px;}
+.VID,
+.VIDEO{display: block;
+    width: 300px;
+    grid-area: nav;
+}}

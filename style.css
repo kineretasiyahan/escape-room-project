@@ -95,6 +95,7 @@ background-color: rgba(255, 255, 255, 0.664);
 #ok{ border: 2px solid black;
     border-radius: 6px;
     padding: 1px;
+    color: black;
     background-color: rgba(255, 255, 255, 0.664)}
 
 
@@ -112,7 +113,7 @@ opacity: 0.9; }
 
 
 
-@media (max-width:360px)
+@media screen and (max-width:360px)
 /* For mobile phones */ 
 { body { 
     display: grid;
@@ -135,11 +136,11 @@ header{
     flex-wrap: wrap;
     grid-area: header;
     height: 55vh;
-    width: 325px;
+    width: 360px;
     padding: 0px;
 }
 .text{
-    font-size: small;
+    font-size: medium;
 }
 nav{
     width: 300px;
@@ -151,7 +152,7 @@ nav{
 }
 footer{
     grid-area: footer;
-    width: 325px;
+    width: 358px;
 }
 .book{
     margin: 10px;

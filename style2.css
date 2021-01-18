@@ -71,3 +71,31 @@ nav {grid-area: nav;
 .d {
     font-size: 400%;
 }
+
+
+@media screen and (max-width:360px)
+/* For mobile phones */ 
+{ body { 
+    display: grid;
+ grid-template-areas:
+"header"
+ "sidebar "
+ "main"
+"section"
+ "article "
+ "nav "
+ "footer ";
+ margin: 0px;
+ padding: 0px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: header;
+    height: 66vh;
+    width: 360px;
+    padding: 0px;}
+footer{margin: 12px;
+    bottom: -18px;}
+}
+

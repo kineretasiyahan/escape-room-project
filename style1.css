@@ -161,7 +161,7 @@ text-shadow: 1px 1px 2px white;}
     margin-bottom: 5px;
     
 }
-@media (max-width:360px)
+@media screen and (max-width:360px)
 /* For mobile phones */ 
 { body { 
     display: grid;
